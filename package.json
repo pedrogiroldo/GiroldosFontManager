@@ -21,12 +21,12 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pedrogiroldo/GiroldosFileManager.git"
+  "url": "git+https://github.com/pedrogiroldo/GiroldosFontManager.git"
   },
   "bugs": {
-    "url": "https://github.com/pedrogiroldo/GiroldosFileManager/issues"
+    "url": "https://github.com/pedrogiroldo/GiroldosFontManager/issues"
   },
-  "homepage": "https://github.com/pedrogiroldo/GiroldosFileManager#readme",
+  "homepage": "https://github.com/pedrogiroldo/GiroldosFontManager#readme",
   "packageManager": "pnpm@10.8.0",
   "dependencies": {
     "commander": "^13.1.0",
