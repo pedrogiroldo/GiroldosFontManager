@@ -9,11 +9,24 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsx src/main.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "file-manager",
+    "utilities",
+    "cli"
+  ],
+  "author": "Pedro Giroldo",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrogiroldo/GiroldosFileManager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pedrogiroldo/GiroldosFileManager/issues"
+  },
+  "homepage": "https://github.com/pedrogiroldo/GiroldosFileManager#readme",
   "packageManager": "pnpm@10.8.0",
   "dependencies": {
     "commander": "^13.1.0",
@@ -23,5 +36,9 @@
     "@types/figlet": "^1.7.0",
     "@types/node": "^22.15.2",
     "typescript": "^5.8.3"
-  }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
 }
