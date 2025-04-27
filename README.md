@@ -12,6 +12,21 @@ Um gerenciador de fontes CLI para sistemas Linux que permite instalar, remover, 
 
 ## Instalação
 
+### Via npm (recomendado)
+
+```bash
+# Instale globalmente com npm
+npm install -g giroldos-font-manager
+
+# Ou com yarn
+yarn global add giroldos-font-manager
+
+# Ou com pnpm
+pnpm add -g giroldos-font-manager
+```
+
+### Pelo repositório
+
 ```bash
 # Clone o repositório
 git clone https://github.com/seuusuario/GiroldosFileManager.git
