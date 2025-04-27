@@ -10,31 +10,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          registry-url: 'https://registry.npmjs.org'
-      
+          node-version: "20"
+          registry-url: "https://registry.npmjs.org"
+
       - name: Instalar PNPM
         uses: pnpm/action-setup@v3
         with:
           version: 10.8.0
-      
+
       - name: Instalar dependências
         run: pnpm install
-      
+
       - name: Build
         run: pnpm build
-      
+
       - name: Definir versão
         run: |
           git_hash=$(git rev-parse --short HEAD)
           current_version=$(node -p "require('./package.json').version")
           new_version="${current_version}-${git_hash}"
           npm version $new_version --no-git-tag-version
-      
+
       - name: Publicar no NPM
         run: pnpm publish --no-git-checks
         env:
