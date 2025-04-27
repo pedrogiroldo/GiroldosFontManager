@@ -89,4 +89,4 @@ gfm update-cache --system
 
 ## Licença
 
-ISC
+MIT
