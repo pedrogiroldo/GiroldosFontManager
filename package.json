@@ -1,0 +1,27 @@
+{
+  "name": "giroldos-file-manager",
+  "version": "1.0.1",
+  "description": "Gerenciador de arquivos e utilitários",
+  "main": "dist/main.js",
+  "bin": {
+    "gfm": "./dist/main.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/main.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.8.0",
+  "dependencies": {
+    "commander": "^13.1.0",
+    "figlet": "^1.8.1"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.7.0",
+    "@types/node": "^22.15.2",
+    "typescript": "^5.8.3"
+  }
+}
